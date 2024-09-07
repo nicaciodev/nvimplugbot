@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoVim - Plugins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Plugins do NeoVim [nvim]</h1>
+  </header> 
+
+  <main>
+    <section class="conteudo-principal">
+      <div class="coluna-pesquisa"> 
+        <h2>Pesquisa</h2> 
+        <input type="text" placeholder="Digite alguma coisa do plugin desejado" id="campo-pesquisa">
+        <button onclick="pesquisar()">Pesquisar</button>
+        <button onclick="listar()">Listar</button>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+      </div>
+      <div class="coluna-chatbot">
+        <div class="chatbot"> 
+          <h2>ChatBot</h2> 
+          <div class="chatbot-pergunta">
+            <input type="text" id="chatbot-input" placeholder="Faça uma pergunta sobre plugins...">
+            <button onclick="responderPergunta()">Enviar</button>
+          </div>
+          <div id="chatbot-resposta" class="chatbot-resposta">
+            <p>Olá! Sou o ChatBot de plugins do Neovim. Faça uma pergunta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2024 - Plugins do Nvim. Software Livre</p>
+    <p>Entre em contato pelo e-mail: contato@plugnvim.io</p>
+  </footer>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
